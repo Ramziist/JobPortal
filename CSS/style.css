@@ -16,8 +16,8 @@ nav {
 
 .menu ul {
     width: 100%;
-    margin-left: 10vh;
-    padding-right: 10px;
+    margin: 0;
+    padding: 0;
     align-content: center;
     align-items: center;
     display: flex;
@@ -35,6 +35,144 @@ nav {
     text-decoration: none;
 }
 
-.menu ul li i .fa {
+.menu ul li i.fa {
     font-size: 20px;
 }
+
+.menu ul li a.nav-link {
+    transform: scale(1);
+    transition: .5s;
+    display: block;
+}
+
+.menu ul li a.nav-link.hide-link {
+    transform: scale(0);
+}
+
+.menu ul li:nth-child(1) a.nav-link.hide-link {
+    transition-delay: 0.8s;
+}
+
+.menu ul li:nth-child(2) a.nav-link.hide-link {
+    transition-delay: 0.7s;
+}
+
+.menu ul li:nth-child(3) a.nav-link.hide-link {
+    transition-delay: 0.6s;
+}
+
+.menu ul li:nth-child(4) a.nav-link.hide-link {
+    transition-delay: 0.5s;
+}
+
+.menu ul li:nth-child(5) a.nav-link.hide-link {
+    transition-delay: 0.4s;
+}
+
+.menu ul li:nth-child(6) a.nav-link.hide-link {
+    transition-delay: 0.3s;
+}
+
+.menu ul li:nth-child(7) a.nav-link.hide-link {
+    transition-delay: 0.2s;
+}
+
+.menu ul li:nth-child(8) a.nav-link.hide-link {
+    transition-delay: 0.1s;
+}
+
+.menu ul li:nth-child(1) a.nav-link {
+    transition-delay: 0s;
+}
+
+.menu ul li:nth-child(2) a.nav-link {
+    transition-delay: 0.1s;
+}
+
+.menu ul li:nth-child(3) a.nav-link {
+    transition-delay: 0.2s;
+}
+
+.menu ul li:nth-child(4) a.nav-link {
+    transition-delay: 0.3s;
+}
+
+.menu ul li:nth-child(5) a.nav-link {
+    transition-delay: 0.4s;
+}
+
+.menu ul li:nth-child(6) a.nav-link {
+    transition-delay: 0.5s;
+}
+
+.menu ul li:nth-child(7) a.nav-link {
+    transition-delay: 0.6s;
+}
+
+.menu ul li:nth-child(8) a.nav-link {
+    transition-delay: 0.7s;
+}
+
+.search-form {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(0);
+    width: 50%;
+    height: 44px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.search-form.activeS {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: .5s;
+    transition-duration: 1s;
+    transform: translateX(-50%);
+}
+
+.search-form input {
+    width: 100%;
+    height: 44px !important;
+    background: transparent;
+    color: honeydew;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-form input:focus {
+    background: transparent;
+    border: black;
+    outline: none;
+}
+
+.search-form::before {
+    content: '\f002';
+    position: absolute;
+    top: 12px;
+    left: -26px;
+    font-size: 18px;
+    color: honeydew;
+    font-family: fontAwesome;
+}
+
+.close {
+    position: absolute;
+    right: 1px;
+    top: 0;
+    height: 44px;
+    background: #343a40;
+    color: honeydew;
+    line-height: 44px;
+    font-size: 28px;
+    text-align: right;
+    width: 20px;
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+}
+
+.
